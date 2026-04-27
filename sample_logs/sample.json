@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2024-01-15T02:34:11Z",
+    "source_ip": "203.0.113.42",
+    "dest_ip": "10.0.0.1",
+    "user": "jsmith",
+    "event_type": "AUTH_FAIL",
+    "action": "LOGIN",
+    "status_code": 401,
+    "resource": "/admin/panel"
+  },
+  {
+    "timestamp": "2024-01-15T02:34:18Z",
+    "source_ip": "203.0.113.42",
+    "dest_ip": "10.0.0.1",
+    "user": "jsmith",
+    "event_type": "AUTH_FAIL",
+    "action": "LOGIN",
+    "status_code": 401,
+    "resource": "/admin/panel"
+  },
+  {
+    "timestamp": "2024-01-15T02:34:25Z",
+    "source_ip": "203.0.113.42",
+    "dest_ip": "10.0.0.1",
+    "user": "jsmith",
+    "event_type": "AUTH_FAIL",
+    "action": "LOGIN",
+    "status_code": 401,
+    "resource": "/admin/panel"
+  },
+  {
+    "timestamp": "2024-01-15T02:34:31Z",
+    "source_ip": "203.0.113.42",
+    "dest_ip": "10.0.0.1",
+    "user": "jsmith",
+    "event_type": "AUTH_SUCCESS",
+    "action": "LOGIN",
+    "status_code": 200,
+    "resource": "/admin/panel"
+  },
+  {
+    "timestamp": "2024-01-15T02:35:02Z",
+    "source_ip": "203.0.113.42",
+    "dest_ip": "10.0.0.5",
+    "user": "jsmith",
+    "event_type": "EXEC",
+    "action": "SUDO",
+    "status_code": 0,
+    "resource": "/etc/shadow"
+  },
+  {
+    "timestamp": "2024-01-15T09:12:44Z",
+    "source_ip": "192.168.1.20",
+    "dest_ip": "10.0.0.10",
+    "user": "alice",
+    "event_type": "AUTH_SUCCESS",
+    "action": "LOGIN",
+    "status_code": 200,
+    "resource": "/dashboard"
+  },
+  {
+    "timestamp": "2024-01-15T09:14:02Z",
+    "source_ip": "192.168.1.20",
+    "dest_ip": "10.0.0.10",
+    "user": "alice",
+    "event_type": "READ",
+    "action": "GET",
+    "status_code": 200,
+    "resource": "/reports/q4"
+  },
+  {
+    "timestamp": "2024-01-15T11:02:18Z",
+    "source_ip": "192.168.1.33",
+    "dest_ip": "10.0.0.10",
+    "user": "bob",
+    "event_type": "DELETE",
+    "action": "DELETE",
+    "status_code": 200,
+    "resource": "/files/old_report.pdf"
+  },
+  {
+    "timestamp": "2024-01-15T13:45:09Z",
+    "source_ip": "198.51.100.7",
+    "dest_ip": "10.0.0.1",
+    "user": "unknown",
+    "event_type": "MALWARE",
+    "action": "UPLOAD",
+    "status_code": 403,
+    "resource": "/uploads/payload.exe"
+  },
+  {
+    "timestamp": "2024-01-15T14:01:55Z",
+    "source_ip": "10.0.0.20",
+    "dest_ip": "10.0.0.1",
+    "user": "carol",
+    "event_type": "PRIV_ESC",
+    "action": "ESCALATE",
+    "status_code": 200,
+    "resource": "/root"
+  },
+  {
+    "timestamp": "2024-01-15T15:22:11Z",
+    "source_ip": "192.168.1.20",
+    "dest_ip": "10.0.0.10",
+    "user": "alice",
+    "event_type": "AUTH_SUCCESS",
+    "action": "LOGOUT",
+    "status_code": 200,
+    "resource": "/dashboard"
+  },
+  {
+    "timestamp": "2024-01-15T16:08:42Z",
+    "source_ip": "192.168.1.55",
+    "dest_ip": "10.0.0.10",
+    "user": "dan",
+    "event_type": "READ",
+    "action": "GET",
+    "status_code": 200,
+    "resource": "/profile"
+  }
+]

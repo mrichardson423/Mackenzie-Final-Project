@@ -1,0 +1,245 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f5f6f8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #000000;
+  margin: 0 0 28px;
+  font-size: 14px;
+}
+
+/* Upload panel */
+.upload-panel {
+  background: #fff;
+  border: 2px dashed #c8ccd4;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.upload-panel.dragging {
+  border-color: #3a7afe;
+  background: #eef3ff;
+}
+
+.upload-panel input[type=file] {
+  display: none;
+}
+
+.upload-panel label {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #eef0f4;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.upload-panel .filename {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn {
+  background: #3a7afe;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:disabled {
+  background: #aab2c1;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #eef0f4;
+  color: #333;
+}
+
+/* Status / loading */
+.status {
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e1e3e9;
+  font-size: 14px;
+}
+
+.status.error {
+  background: #fdecec;
+  border-color: #f4b4b4;
+  color: #8a1f1f;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px; height: 14px;
+  border: 2px solid #c8ccd4;
+  border-top-color: #3a7afe;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Result cards */
+.results {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.result-card {
+  background: #fff;
+  border: 1px solid #e1e3e9;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.result-card .header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.badge.LOW { background: #2faa55; }
+.badge.MEDIUM { background: #d9a82a; }
+.badge.HIGH { background: #e07a2a; }
+.badge.CRITICAL { background: #c83838; }
+
+.score {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+
+.summary {
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.tags {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #eef0f4;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #000000;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+details {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+details > summary {
+  cursor: pointer;
+  color: #3a7afe;
+  font-weight: 500;
+  user-select: none;
+}
+
+.ai-panel {
+  background: #f9faff;
+  border: 1px solid #dde3f5;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+
+.ai-panel h4 {
+  margin: 10px 0 4px;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ai-panel h4:first-child { margin-top: 0; }
+
+.ai-panel p, .ai-panel ul {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.ai-panel ul { padding-left: 20px; }
+
+pre.raw {
+  background: #1f2128;
+  color: #e6e6e6;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.no-results {
+  margin-top: 28px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e1e3e9;
+  border-radius: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.ethics-note {
+  margin-top: 36px;
+  font-size: 12px;
+  color: #666;
+  border-top: 1px solid #e1e3e9;
+  padding-top: 14px;
+  line-height: 1.5;
+}
