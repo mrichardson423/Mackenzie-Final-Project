@@ -1,4 +1,5 @@
-Build a full-stack AI-powered security log triage application with the following architecture:
+Author: Mackenzie Richardson
+Date: 04/27/2026
 
 ---
 
@@ -111,7 +112,7 @@ project-root/
 │   ├── parser.py  
 │   ├── triage.py  
 │   ├── explainer.py  
-│   ├── .env           # OPENAI_API_KEY=sk-...  
+│   ├── .env            
 │   └── requirements.txt  
 ├── frontend/  
 │   ├── src/  
@@ -120,7 +121,7 @@ project-root/
 │   │   │   ├── UploadPanel.tsx  
 │   │   │   ├── ResultCard.tsx  
 │   │   │   └── AIAnalysisPanel.tsx  
-│   │   └── api.ts     # fetch wrapper  
+│   │   └── api.ts       
 │   └── package.json  
 └── README.md  
 
@@ -148,7 +149,7 @@ CSV: same fields as column headers.
 
 ---
 
-## ETHICAL DESIGN NOTES (important — bake this into the system prompt and README)
+## ETHICAL DESIGN NOTES 
 
 This tool is designed around **transparency and human oversight**:
 - The AI never makes final decisions — it provides reasoning, and a human analyst retains authority
