@@ -164,6 +164,6 @@ Include a brief comment block in `explainer.py` documenting this ethical design 
 ## NOTES
 
 - CORS should be configured to allow `http://localhost:5173` (Vite default)
-- The triage threshold (minimum score to pass to OpenAI) should be a configurable constant, default 40
+- The triage threshold (minimum score to pass to OpenAI) should be a configurable constant, default 25
 - Do not hardcode the OpenAI API key anywhere — `.env` only
 - README should include setup instructions for both backend and frontend
